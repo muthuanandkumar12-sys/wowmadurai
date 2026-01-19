@@ -18,11 +18,18 @@ app.use("/api/payment",paymentRoutes);
 app.use("/api/bookings", bookingRoutes);
 
 
-mongoose
-  .connect("mongodb://127.0.0.1:27017/wowmadurai")
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
+import mongoose from "mongoose";
 
+mongoose.set("strictQuery", false);
+
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 10000,
+  })
+  .then(() => console.log("✅ MongoDB Connected"))
+  .catch((err) => console.error("❌ Mongo Error:", err.message));
 app.use("/api/auth", authRoutes);
 app.use("/api/survey", surveyRoutes);
 
