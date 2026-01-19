@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./TouristPlaces.css";
+import "./touristPlaces.css";
 
 const places = [
   {

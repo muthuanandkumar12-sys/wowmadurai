@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Hotels.css";
+import "./hotels.css";
 
 const Hotels = () => {
   const [selectedHotel, setSelectedHotel] = useState(null);
