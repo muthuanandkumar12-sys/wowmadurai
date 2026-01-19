@@ -131,7 +131,7 @@ export default function TouristPlaces() {
   const addToFavorites = async (place) => {
     const userId = localStorage.getItem("userId");
     try {
-      await axios.post("http://localhost:5000/api/auth/add-favorite", {
+      await axios.post("https://wowmadurai-backend.onrender.com/api/auth/add-favorite", {
         userId,
         place,
       });

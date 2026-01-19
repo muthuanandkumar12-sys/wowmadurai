@@ -138,7 +138,7 @@ const [checkOut, setCheckOut] = useState("");
 
   try {
     const res = await fetch(
-      "http://localhost:5000/api/payment/create-session",
+      "https://wowmadurai-backend.onrender.com/api/payment/create-session",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

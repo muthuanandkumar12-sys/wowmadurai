@@ -13,7 +13,7 @@ export default function SignIn() {
 
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/auth/signin",
+      "https://wowmadurai-backend.onrender.com/api/auth/signin",
       { email, password }
     );
 

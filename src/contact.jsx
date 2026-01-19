@@ -27,7 +27,7 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/survey", form);
+      await axios.post("https://wowmadurai-backend.onrender.com//api/survey", form);
       alert("Thanks for your feedback ❤️");
       setForm({ name: "", email: "", feedback: "", rating: "" });
     } catch (err) {

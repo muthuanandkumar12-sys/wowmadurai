@@ -4,7 +4,7 @@ export default function BookingHistory() {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/bookings/all")
+    fetch("https://wowmadurai-backend.onrender.com/api/bookings/all")
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, []);

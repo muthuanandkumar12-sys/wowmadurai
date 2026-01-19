@@ -11,7 +11,7 @@ export default function PaymentSuccess() {
     if (storedBooking) {
       setBooking(storedBooking);
 
-      fetch("http://localhost:5000/api/bookings/add", {
+      fetch("https://wowmadurai-backend.onrender.com/api/bookings/add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(storedBooking),
