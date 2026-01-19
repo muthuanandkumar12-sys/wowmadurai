@@ -2,8 +2,7 @@
 node_modules/
 
 # build files
-dist/
-build/
+
 
 # environment variables
 .env
