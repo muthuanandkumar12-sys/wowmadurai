@@ -18,7 +18,7 @@ app.use("/api/payment",paymentRoutes);
 app.use("/api/bookings", bookingRoutes);
 
 
-import mongoose from "mongoose";
+
 
 mongoose.set("strictQuery", false);
 
