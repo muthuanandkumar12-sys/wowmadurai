@@ -1,0 +1,95 @@
+.nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.brand-link {
+  font-weight:700;
+  letter-spacing:1px;
+  color:#111;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:1.05rem;
+}
+.mark {
+  background: linear-gradient(90deg,#ff9b00,#ff3d00);
+  color: white;
+  padding:6px 8px;
+  border-radius:6px;
+  font-weight:800;
+}
+.nav-links {
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+.nav-links a {
+  color:#222;
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:8px;
+  font-weight:600;
+  transition: all .18s ease;
+}
+.nav-links a:hover, .nav-links a.active {
+  background: rgba(255, 61, 0, 0.08);
+  color:#ff3d00;
+  transform: translateY(-2px);
+}
+
+/* mobile */
+.nav-toggle {
+  display:none;
+  background:transparent;
+  border:0;
+  width:40px;
+  height:32px;
+  position:relative;
+  cursor:pointer;
+}
+.nav-toggle span {
+  position:absolute;
+  left:8px;
+  right:8px;
+  height:3px;
+  background:#111;
+  border-radius:3px;
+  transition: all .25s ease;
+}
+.nav-toggle span:nth-child(1){ top:8px;}
+.nav-toggle span:nth-child(2){ top:15px;}
+.nav-toggle span:nth-child(3){ top:22px;}
+.nav-toggle.open span:nth-child(1){ transform: translateY(7px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){ opacity:0;}
+.nav-toggle.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg);}
+
+@media (max-width: 880px){
+  .nav-links{
+    position: absolute;
+    top:64px;
+    right:20px;
+    width:220px;
+    flex-direction:column;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 8px 30px rgba(12,12,12,0.08);
+    padding:12px;
+    border-radius:10px;
+    display:none;
+  }
+  .nav-links.open { display:flex; }
+  .nav-toggle { display:block; }
+}

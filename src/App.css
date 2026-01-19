@@ -1,0 +1,15 @@
+/* Common background for all pages */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Modern soft gradient */
+  color: #333;
+}
+
+/* Optional: smooth scroll and default box-sizing */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+

@@ -1,0 +1,147 @@
+/* Full background */
+.auth-bg {
+  min-height: 100vh;
+  background-image: url("https://static.toiimg.com/thumb/107052734/Meenakshi-Amman-Temple.jpg?width=1200&height=900");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Dark overlay */
+.auth-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Card */
+.auth-card {
+  position: relative;
+  background: white;
+  padding: 35px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  z-index: 1;
+}
+
+/* Heading */
+.auth-card h2 {
+  margin-bottom: 20px;
+  color: #ff6a00;
+}
+
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* Button */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  background: #ff6a00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card button:hover {
+  background: #e65c00;
+}
+
+/* Text */
+.auth-card p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-card a {
+  color: #ff6a00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-bg {
+  min-height: 100vh;
+  background-image: url("https://static.toiimg.com/thumb/107052734/Meenakshi-Amman-Temple.jpg?width=1200&height=900");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.auth-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.auth-card {
+  position: relative;
+  background: white;
+  padding: 35px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  z-index: 1;
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  color: #ff6a00;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  background: #ff6a00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  background: #e65c00;
+}
+
+.auth-card p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-card a {
+  color: #ff6a00;
+  text-decoration: none;
+  font-weight: 600;
+}
