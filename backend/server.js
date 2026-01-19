@@ -24,6 +24,13 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use("/api/auth", authRoutes);
+app.use("/api/survey", surveyRoutes);
 
-const PORT = 5000;
+app.get("/", (req, res) => {
+  res.send("WOW MADURAI BACKEND LIVE 🚀");
+});
+
+const PORT = process.env.PORT || 5000;
+
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
